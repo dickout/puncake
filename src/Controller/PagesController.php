@@ -72,7 +72,8 @@ class PagesController extends AppController
         
 
         foreach($optionsData as $option)
-            $options[$option['name']] = $option['value'];
+            if($options['type'] == 'page')
+                $options[$option['name']] = $option['value'];
 
         $this->set('images', $images->find('all'));
         $this->set('options', $options);
