@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Puncake <?=$this->fetch('title') == 'Puncake' ? 'CMS' : ':: ' . $this->fetch('title') ?></title>
+        <title>Puncake :: <?=$this->fetch('title')?></title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -132,6 +132,7 @@
         <script src="<?=$this->puncake?>/assets/vendor/toastr/toastr.js"></script>
 
         <script src="<?=$this->puncake?>/assets/bundles/mainscripts.bundle.js"></script>
-        <script src="<?=$this->puncake?>/assets/js/index.js"></script>
+        <script src="https://cdn.ckeditor.com/4.11.4/standard/ckeditor.js"></script>
+        <script src="<?=$this->puncake?>/cake/js/ckeditor.js"></script>
     </body>
 </html>

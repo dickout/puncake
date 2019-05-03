@@ -39,4 +39,8 @@ class AppView extends View
         $this->url = $this->request->getAttribute('webroot');
         $this->puncake = $this->request->getAttribute('webroot') . 'pun';
     }
+
+    public function getPageUrl($slug) {
+        return $this->url . 'pages/view/' . $slug;
+    }
 }
