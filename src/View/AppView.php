@@ -36,6 +36,7 @@ class AppView extends View
      */
     public function initialize()
     {
+        $this->url = $this->request->getAttribute('webroot');
         $this->puncake = $this->request->getAttribute('webroot') . 'pun';
     }
 }

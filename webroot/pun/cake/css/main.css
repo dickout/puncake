@@ -5,3 +5,8 @@
 .sidebar-nav .metismenu ul a {
     padding: 10px 15px 10px 30px;
 }
+
+.main-content-clear {
+    float: unset;
+    width: 100%;
+}
